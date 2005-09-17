@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package version="1.0">
+  <name>System_SharedMemory</name>
+  <summary>common OO-style shared memory API</summary>
+  <description>OO-style shared memory API for several shared memory engines</description>
+  <maintainers>
+    <maintainer>
+      <user>bolk</user>
+      <name>Evgeny Stepanischev</name>
+      <email>bolk@lixil.ru</email>
+      <role>lead</role>
+    </maintainer>
+  </maintainers>
+  <release>
+    <version>0.0.4</version>
+    <date>2005-09-07</date>
+    <license>PHP License</license>
+    <state>beta</state>
+    <notes>This is the first release.</notes>
+    <deps>
+      <dep type="php" rel="ge" version="4.0.0"/>
+    </deps>
+    <provides type="class" name="System_SharedMemory" />
+    <provides type="class" name="System_SharedMemory_Apachenote" />
+    <provides type="class" name="System_SharedMemory_Apc" />
+    <provides type="class" name="System_SharedMemory_Common" />
+    <provides type="class" name="System_SharedMemory_Eaccelerator" />
+    <provides type="class" name="System_SharedMemory_File" />
+    <provides type="class" name="System_SharedMemory_Memcache" />
+    <provides type="class" name="System_SharedMemory_Mmcache" />
+    <provides type="class" name="System_SharedMemory_Shmop" />
+    <provides type="class" name="System_SharedMemory_Systemv" />
+    <provides type="function" name="System_SharedMemory::factory" />
+    <provides type="function" name="System_SharedMemory::getAvailableTypes" />
+    <provides type="function" name="System_SharedMemory_Apachenote::get" />
+    <provides type="function" name="System_SharedMemory_Apachenote::set" />
+    <provides type="function" name="System_SharedMemory_Apachenote::rm" />
+    <provides type="function" name="System_SharedMemory_Apc::get" />
+    <provides type="function" name="System_SharedMemory_Apc::set" />
+    <provides type="function" name="System_SharedMemory_Apc::rm" />
+    <provides type="function" name="System_SharedMemory_Eaccelerator::get" />
+    <provides type="function" name="System_SharedMemory_Eaccelerator::set" />
+    <provides type="function" name="System_SharedMemory_Eaccelerator::rm" />
+    <provides type="function" name="System_SharedMemory_File::isConnected" />
+    <provides type="function" name="System_SharedMemory_File::get" />
+    <provides type="function" name="System_SharedMemory_File::set" />
+    <provides type="function" name="System_SharedMemory_File::rm" />
+    <provides type="class" name="System_SharedMemory_Memache" extends="System_SharedMemory_Common" />
+    <provides type="function" name="System_SharedMemory_Memache::System_SharedMemory_Memcache" />
+    <provides type="function" name="System_SharedMemory_Memache::isConnected" />
+    <provides type="function" name="System_SharedMemory_Memache::get" />
+    <provides type="function" name="System_SharedMemory_Memache::set" />
+    <provides type="function" name="System_SharedMemory_Memache::rm" />
+    <provides type="function" name="System_SharedMemory_Mmcache::get" />
+    <provides type="function" name="System_SharedMemory_Mmcache::set" />
+    <provides type="function" name="System_SharedMemory_Mmcache::rm" />
+    <provides type="function" name="System_SharedMemory_Shmop::get" />
+    <provides type="function" name="System_SharedMemory_Shmop::set" />
+    <provides type="function" name="System_SharedMemory_Shmop::rm" />
+    <provides type="function" name="System_SharedMemory_Common::isConnected" />
+    <provides type="function" name="System_SharedMemory_Common::engineName" />
+    <provides type="function" name="System_SharedMemory_Systemv::isConnected" />
+    <provides type="function" name="System_SharedMemory_Systemv::get" />
+    <provides type="function" name="System_SharedMemory_Systemv::set" />
+    <provides type="function" name="System_SharedMemory_Systemv::rm" />
+    <provides type="class" name="System_SharedMemory_Sqlite" extends="System_SharedMemory_Common" />
+    <provides type="function" name="System_SharedMemory_Sqlite::isConnected" />
+    <provides type="function" name="System_SharedMemory_Sqlite::get" />
+    <filelist>
+      <file role="php" baseinstalldir="/System" md5sum="3882530a499ac33b13cb821f9d68ec63" name="SharedMemory.php"/>
+      <file role="doc" baseinstalldir="/System" md5sum="191f3cb83b11959d6c22d32c678e01f2" name="docs/README.TXT"/>
+      <file role="php" baseinstalldir="/System" md5sum="68b64cb5d2a5c43f467840f847416df5" name="SharedMemory/Apachenote.php"/>
+      <file role="php" baseinstalldir="/System" md5sum="2dd1a30355fbdf599c133dfff515d775" name="SharedMemory/Apc.php"/>
+      <file role="php" baseinstalldir="/System" md5sum="02e3830d32dfeb0dc423275a4a59512d" name="SharedMemory/Eaccelerator.php"/>
+      <file role="php" baseinstalldir="/System" md5sum="02d96bc76d28962d49d6a7763c087b5b" name="SharedMemory/File.php"/>
+      <file role="php" baseinstalldir="/System" md5sum="4552b39dc95b468c9b81b4341a8445d5" name="SharedMemory/Memcache.php"/>
+      <file role="php" baseinstalldir="/System" md5sum="74b0cd967a6831243e5f35508c3091e1" name="SharedMemory/Mmcache.php"/>
+      <file role="php" baseinstalldir="/System" md5sum="da1d707369b5c44d851e6d1828dd10d1" name="SharedMemory/Shmop.php"/>
+      <file role="php" baseinstalldir="/System" md5sum="3a840d2c10b6bb3d94510b682199538f" name="SharedMemory/Common.php"/>
+      <file role="php" baseinstalldir="/System" md5sum="89e3ed8567566ab694ac2d5cee7cc63a" name="SharedMemory/Systemv.php"/>
+      <file role="php" baseinstalldir="/System" md5sum="0cb21b453b02eacb9604cc3fe9098894" name="SharedMemory/Sqlite.php"/>
+      <file role="php" baseinstalldir="/System" name="SharedMemory/Sharedance.php"/>
+    </filelist>
+  </release>
+</package>
