@@ -1,0 +1,25 @@
+{
+    "authors": [
+        {
+            "email": "bolk@lixil.ru",
+            "name": "Evgeny Stepanischev",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    },
+    "description": "More info available on: http://pear.php.net/package/System_Shared",
+    "license": "PHP License",
+    "name": "pear/system_shared",
+    "support": {
+        "issues": "http:///bugs/search.php?cmd=display&package_name[]=System_SharedMemory",
+        "source": "https://github.com/pear/System_SharedMemory"
+    },
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
